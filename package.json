@@ -1,0 +1,41 @@
+{
+  "name": "node-pipeline-jenkins",
+  "version": "1.0.0",
+  "description": "simple node application to run jenkins pipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!**/.vscode/**",
+      "!**/.git/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtaylor32/node-pipeline-jenkins.git"
+  },
+  "author": "@jtaylor32 (Jordan Taylor)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jtaylor32/node-pipeline-jenkins/issues"
+  },
+  "homepage": "https://github.com/jtaylor32/node-pipeline-jenkins#readme",
+  "devDependencies": {
+    "jest": "^18.1.0"
+  }
+}

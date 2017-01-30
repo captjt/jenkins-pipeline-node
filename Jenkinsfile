@@ -13,7 +13,7 @@ node {
         echo 'Testing...'
         sh 'npm test'
     stage 'Publish'
-        echo 'Publishing...'
+        echo 'Publishing'
 		publishHTML (target: [
 			allowMissing: false,
 			alwaysLinkToLastBuild: false,
